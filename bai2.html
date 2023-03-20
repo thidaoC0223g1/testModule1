@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>test 2 </title>
+
+</head>
+<body>
+    <script>
+
+        function tryRemoveFromArray(ar,n){
+            let ar2=[];
+         if(ar.length<=n){
+             console.log('khong du dieu kien xet')
+             console.log(ar)
+         }else {
+             for (let i = 0; i < n; i++) {
+                 ar2[i]=ar[i]
+                 }
+             for(let i= n+1; i<ar.length; i++){
+                 ar2[i-1]=ar[i]
+             }console.log(ar2)
+         }
+        }
+        let ar1= [3,6,7,7,8,9,10,4,3,5];
+        tryRemoveFromArray(ar1,2);
+
+    </script>
+</body>
+
+</html>
