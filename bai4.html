@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>test 4 </title>
+ <canvas id="myCanvas" width="200px" height="200px" ></canvas >
+</head>
+<body>
+    <script>
+        class Rectangle{
+            constructor(width,height){
+                this.width=width;
+                this.height=height;
+            }
+            setWidth(width){
+                this.width= width;
+            }
+            setHeight(height){
+                this.height=height
+            }
+            getWidth(){
+                return this.width;
+            }
+            getHeight(){
+                return this.height;
+            }
+
+        }
+        let rec=new Rectangle();
+         rec.setWidth(200);
+         rec.setHeight(100);
+
+         let a= rec.getWidth();
+         let b=rec.getHeight()
+let c= document.getElementById('myCanvas');
+ctx=c.getContext('2d');
+ctx.fillRect(10,10,a,b);
+
+
+    </script>
+</body>
+
+</html>
